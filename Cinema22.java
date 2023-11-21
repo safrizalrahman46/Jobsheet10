@@ -26,16 +26,25 @@ public class Cinema22 {
 
             System.out.println(Audience.length);
             for (int i = 0; i < Audience.length; i++) {
-            System.out.println("Panjang baris ke-"+(i+1)+" : "+Audience[i].length);
+            System.out.println("Length Row at -"+(i+1)+" : "+Audience[i].length);
     }
             for (String[] rowAudience : Audience) {
-            System.out.println("Panjang baris :"+rowAudience.length);
+            System.out.println("Length Row :"+rowAudience.length);
     }
-            System.out.println("penonton pada baris ke-3: ");
+            System.out.println("AUDIENCES IN THE ROW 3: ");
 
             for (int i = 0; i < Audience[2].length; i++) {
             System.out.println(Audience[2][i]);
     }
+        System.out.println("AUDIENCES IN THE ROW 3 :");
+        for (String i : Audience[2]) {
+        System.out.println(i);
+        }
+
+        // System.out.println("AUDIENCES IN THE ROW 3 :");
+        for (int i = 0; i  < Audience.length; i++) {
+                System.out.println("Audience In row: " + (i + 1) + String.join(",", Audience[i]));
+                }
             // Audience[0][0] = "Amin";
             // Audience[0][1] = "Bena";
             // Audience[1][0] = "Candra";
